@@ -26,6 +26,7 @@
 .outer-container{
   background-image: url('./components/essentialSports.jpg');
 /* background-color: blue; */
+margin-top: -35px;
 background-repeat:repeat-y;
 background-size:auto
 }

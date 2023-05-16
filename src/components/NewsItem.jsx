@@ -4,7 +4,7 @@ const NewsItem = (props) => {
   const { title, description, url, imgUrl, author, publishedAt, name } = props;
   return (
     <div className="my-4">
-      <div className="card">
+      <div className="card" style={{ height: "610px", width: "100%" }}>
         <img src={imgUrl} className="card-img-top news-item-image" alt="..."  style={{ height: "300px", width: "100%" }} />
         <div className="card-body">
           <span className="badge bg-danger">{name}</span>
@@ -16,7 +16,7 @@ const NewsItem = (props) => {
           </a>
           <p className="card-text">
             <small className="text-muted">
-              By {!author ? "Unknown" : author} updated at {new Date(publishedAt).toGMTString()}
+               updated at {new Date(publishedAt).toGMTString()}
             </small>
           </p>
         </div>
