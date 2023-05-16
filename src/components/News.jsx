@@ -17,7 +17,7 @@ const News = (props) => {
   
   const updateNews = async () => {
     props.setProgress(10);
-    const url = 'http://localhost:3001/rss';
+    const url = 'https://essential-sports-api.vercel.app/';
     setLoading(true);
     props.setProgress(30);
   
